@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Clean Thumbnails",
+    "version": "1.0",
+    "description": "Hides the YouTube video preview overlay and makes it click-through to improve the user experience.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
