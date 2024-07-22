@@ -5,11 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to disable the overlay
 function disableOverlay() {
-    const overlays = document.querySelectorAll('.YtInlinePlayerControlsTopLeftControls');
-    overlays.forEach((overlay, index) => {
-        overlay.style.display = 'none'; // making sure
-        overlay.style.pointerEvents = 'none'; // making doubly sure
-        // console.log(`Overlay ${index} modified:`, overlay); // debugging
+    const overlayClasses = ['.YtInlinePlayerControlsTopLeftControls', '.ytp-paid-content-overlay'];
+    overlayClasses.forEach((overlayClass) => {
+        const overlays = document.querySelectorAll(overlayClass);
+        overlays.forEach((overlay, index) => {
+            overlay.style.display = 'none'; // making sure
+            overlay.style.pointerEvents = 'none'; // making doubly sure
+            // console.log(`Overlay ${index} in class ${overlayClass} modified:`, overlay); // debugging
+        });
     });
 }
 
