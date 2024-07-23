@@ -15,6 +15,8 @@ YouTube Clean Thumbnails is a Chrome extension that enhances your YouTube browsi
 ## Usage
 Once installed, the extension will automatically hide and make the overlay click-through on all YouTube video thumbnails.
 
+<img width="513" alt="image" src="https://github.com/user-attachments/assets/a7e4eca0-3dcc-4740-b7f1-406430f0a207">
+
 ## Contributing
 Feel free to submit issues or pull requests if you have suggestions or improvements.
 
